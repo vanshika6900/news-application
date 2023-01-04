@@ -1,0 +1,43 @@
+.navv{
+    background-color: #23282c!important;
+}
+
+.logoo{
+    max-width: 70px;
+    min-height: 70px;
+    position: relative;
+    left: 30px;
+    top: 0px;
+}
+
+.navi{
+    margin-left: auto;
+    position: relative;
+    right: 0px;
+}
+
+.navli{
+    margin: 0px 30px;
+    color: #003366!important;
+}
+.navli a{
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white!important;
+}
+.navli a:hover{
+    color: #0073aa!important;
+}
+
+.nav-link .active{
+    color: #003366;
+}
+.navicon{
+    color: white!important;
+}
+
+.navbtn{
+    color: white!important;
+    background-color: white!important;
+}
