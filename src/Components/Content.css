@@ -13,7 +13,8 @@
     
     /* height: 100vh; */
     width: 100%;
-    margin: 10px 10px;
+    margin: 2.5% 1.2%;
+    
     /* background-color: #3A8891; */
 }
 .movie{
@@ -34,7 +35,7 @@
 }
 .outer{
     background-color: #fefefe;
-    max-height: 100vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -57,7 +58,7 @@
 }
 .headingg1{
     font-size: 30px;
-    font-family: 'Merriweather', serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: #0073aa;
     font-weight: bold;
 
@@ -72,11 +73,15 @@
     padding: 50px 0px;
 }
 .third{
-    margin: 0px 0px;
+    /* margin: 0px 0px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .third1{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 30px 7px;
 }
 .third11{
@@ -94,9 +99,16 @@
     font-size: medium;
 
 }
-@media only screen and (max-width: 1200px){
+.titl{
+    color: #0073aa;
+}
+@media only screen and (max-width: 1056px){
     .main-div{
         flex-direction: column;
+    }
+    .child-div{
+        margin: 13% 2%;
+        
     }
 }
 

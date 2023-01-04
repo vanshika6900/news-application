@@ -3,8 +3,8 @@
 }
 
 .logoo{
-    max-width: 70px;
-    min-height: 70px;
+    max-width: 80px;
+    height: 40px;
     position: relative;
     left: 30px;
     top: 0px;
@@ -21,13 +21,14 @@
     color: #003366!important;
 }
 .navli a{
-    font-size: 20px;
+    font-size: 16px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+    font-weight:200;
     color: white!important;
 }
 .navli a:hover{
     color: #0073aa!important;
+    font-weight: bold;
 }
 
 .nav-link .active{

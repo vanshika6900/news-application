@@ -6,7 +6,7 @@ function Content() {
     <>
       <div className="main-div">
         <div className="child-div movie">
-          <div className="headingg1">Movies {">"}</div>
+          <div className="headingg1">Movies </div>
           <div className="outer">
             <div className="inside pic">
               <img src={jwm} alt="" className="imag" />
@@ -14,7 +14,7 @@ function Content() {
             </div>
             <div>
               <div className="px-2 py-2">Jan 2,2023</div>
-              <h4 className="text-center py-3">The Blockbuster Movie</h4>
+              <h4 className="text-center py-3 titl">The Blockbuster Movie</h4>
               <div className="px-3 pb-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Blanditiis explicabo consequatur corrupti ipsam, vel deserunt
@@ -27,7 +27,7 @@ function Content() {
         </div>
 
         <div className="child-div">
-          <div className="headingg1">Trending {">"}</div>
+          <div className="headingg1">Trending </div>
           <div className="outer">
             <div className="divide">
               <div className="inside2 px-3">
@@ -35,7 +35,7 @@ function Content() {
                 {/* <img src={jwm} alt="" className="imag" /> */}
                 <span> 3 Jan,2023</span>
               </div>
-              <h4 className="mx-3 text-center my-3">The Trending News</h4>
+              <h4 className="mx-3 text-center my-3 titl">The Trending News</h4>
               <div className="px-3">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
                 sapiente, cumque animi nostrum qui quasi nam. Hic minus
@@ -53,7 +53,7 @@ function Content() {
                 {/* <img src={jwm} alt="" className="imag" /> */}
                 <span> 3 Jan,2023</span>
               </div>
-              <h4 className="mx-3 text-center my-3">The Trending News</h4>
+              <h4 className="mx-3 text-center my-3 titl">The Trending News</h4>
               <div className="px-3">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
                 sapiente, cumque animi nostrum qui quasi nam. Hic minus
@@ -66,9 +66,9 @@ function Content() {
         </div>
 
         <div className="child-div">
-          <div className="headingg1">Movies {">"}</div>
+          <div className="headingg1">Most Read News </div>
           <div className="outer">
-            <div className="third">
+            {/* <div className="third"> */}
               <div className="third1">
                 <div className="third11">
                   <div className="third111">
@@ -83,9 +83,9 @@ function Content() {
                   <img src={jwm} alt="" className="imag" />
                 </div>
               </div>
-            </div>
+            {/* </div> */}
 
-            <div className="third">
+            {/* <div className="third"> */}
               <div className="third1">
                 <div className="third11">
                   <div className="third111">
@@ -101,9 +101,9 @@ function Content() {
                   <img src={jwm} alt="" className="imag" />
                 </div>
               </div>
-            </div>
+            {/* </div> */}
 
-            <div className="third">
+            {/* <div className="third"> */}
               <div className="third1">
                 <div className="third11">
                   <div className="third111">
@@ -118,7 +118,7 @@ function Content() {
                   <img src={jwm} alt="" className="imag" />
                 </div>
               </div>
-            </div>
+            {/* </div> */}
           </div>
         </div>
       </div>
