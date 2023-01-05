@@ -3,6 +3,10 @@ import './Nav.css';
 import logo from "../assets/logo2.png"
 
 function Nav() {
+    const date = new Date().toLocaleDateString();
+    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const day = new Date().getDay();
+
   return (
     
       <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top navv">
@@ -41,7 +45,11 @@ function Nav() {
         {/* <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button className="btn btn-outline-success" type="submit">Search</button> */}
 
-        
+        <div className='date px-5'>
+            {days[day]}
+            <br />
+            {date}
+        </div>
       </form>
     </div>
   </div>

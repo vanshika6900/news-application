@@ -2,6 +2,8 @@ import React from "react";
 import "./Content.css";
 import jwm from "../assets/jwm.jpg";
 function Content() {
+    // const date = new Date().toLocaleDateString();
+    
   return (
     <>
       <div className="main-div">
@@ -67,7 +69,7 @@ function Content() {
 
         <div className="child-div">
           <div className="headingg1">Most Read News </div>
-          <div className="outer">
+          <div className="outer outer2">
             {/* <div className="third"> */}
               <div className="third1">
                 <div className="third11">

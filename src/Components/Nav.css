@@ -28,12 +28,10 @@
 }
 .navli a:hover{
     color: #0073aa!important;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
-.nav-link .active{
-    color: #003366;
-}
+
 .navicon{
     color: white!important;
 }
@@ -41,4 +39,14 @@
 .navbtn{
     color: white!important;
     background-color: white!important;
+}
+.date{
+    color: white;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 1056px){
+    .date{
+        text-align: center;
+    }
 }
