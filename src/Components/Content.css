@@ -7,13 +7,18 @@
     background-color: #f1f1f1;
     max-width: 100%;
     min-height: 100vh;
-    padding: 30px 30px;
+    padding: 30px 100px;
 }
 .child-div{
     
-    /* height: 100vh; */
+    height: 500vh;
     width: 100%;
     margin: 2.5% 1.2%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: #fefefe; */
     
     /* background-color: #3A8891; */
 }
@@ -30,12 +35,12 @@
 
 .imag{
     height: 100%;
-    max-width: 100%;
+    width: 100%;
    
 }
 .outer{
     background-color: #fefefe;
-    height: 100vh;
+    height: 100%;
     position: relative;
 }
 
@@ -70,7 +75,7 @@
    
 }
 .divide{
-    padding: 50px 0px;
+    padding: 14px 0px;
 }
 .third{
     /* margin: 0px 0px; */
@@ -82,11 +87,20 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 30px 7px;
+    padding: 6px 7px;
 }
 .third11{
     width: 100%;
     margin: 0px 3px;
+    
+}
+
+.third12{
+    width: 100%;
+    height: 100%;
+    margin: 3px 3px;
+    display: flex;
+    justify-content: center;
 }
 .third111{
     display: flex;
@@ -106,7 +120,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    max-height: 21vh;
+}
+
+.outer3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 62vh;
+    flex-wrap: wrap;
 }
 @media only screen and (max-width: 1056px){
     .main-div{
