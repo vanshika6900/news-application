@@ -1,31 +1,41 @@
-import React from "react";
+import React , {useState, useEffect} from "react";
 import "./Content.css";
 import jwm from "../assets/jwm.jpg";
 function Content() {
     // const date = new Date().toLocaleDateString();
+    const [moviesNewsData, setMoviesNewsData] = useState([]);
+    useEffect(()=>{
+      async function dataFetchMethod() {
+        const res = await fetch('https://newsapi.org/v2/everything?q=movies&apiKey=f46396e98dc9464aac982d018005876e');
+        const resposnse = await res.json();
+        setMoviesNewsData(resposnse.articles.splice(0,1))
+        console.log(resposnse.articles.splice(0,1))
+      }
+      dataFetchMethod();
+    },[])
     
   return (
     <>
       <div className="main-div">
         <div className="child-div movie">
           <div className="headingg1">Movies </div>
-          <div className="outer">
+          {moviesNewsData.map((element, index) => (
+            <div className="outer" key={index}>
             <div className="inside pic">
-              <img src={jwm} alt="" className="imag" />
-              <span className="headingg2">Jab We Met</span>
+              <img src={element.urlToImage} alt="" className="imag" />
+              <span className="headingg2">{element.author}</span>
             </div>
             <div>
               <div className="px-2 py-2">Jan 2,2023</div>
-              <h4 className="text-center py-3 titl">The Blockbuster Movie</h4>
+              <h4 className="text-center py-3 titl">{element.title}</h4>
               <div className="px-3 pb-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Blanditiis explicabo consequatur corrupti ipsam, vel deserunt
-                modi earum dolor! Labore beatae et temporibus autem quas nam
-                porro exercitationem optio eaque quos.
+                {element.description.slice(0,500)}
               </div>
               <button className="mx-3 mb-3 butn">Continue Reading</button>
             </div>
           </div>
+          ))}
+          
         </div>
 
         <div className="child-div">
